@@ -1,0 +1,18 @@
+@keyframes whimsy-move-r {
+  from { left: -300px; top: 400px; }
+  to { left: 1200px; top: 0px; }
+}
+@keyframes whimsy-move-l {
+  from { left: 1200px; top: 0px; }
+  to { left: -300px; top: 400px; }
+}
+
+img.whimsy-move {
+  position: fixed;
+  top: 40px;
+  transform: scaleX(1);
+  animation-name: whimsy-move-r;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

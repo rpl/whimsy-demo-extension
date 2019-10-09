@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "whimsicalify",
+  "version": "0.1",
+  "description": "whimsicalify description",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://developer.mozilla.org/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+         "content.css"
+      ]
+    }
+  ],
+  "permissions": [],
+  "icons": {
+    "64": "icon.png"
+  },
+  "browser_action": {
+    "default_title": "whimsicalify (browserAction)",
+    "default_icon": {
+      "64": "icon.png"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "whimsy.svg"
+  ]
+}
